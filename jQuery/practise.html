@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+ <head>
+ <title>Learning jQuery</title>
+
+ <meta charset="utf-8" />
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+ <script type="text/javascript" src="jquery.min.js"></script>
+
+
+ <style>
+
+ #circle {
+ width:200px;
+ height:200px;
+ background-color:green;
+ border-radius:100px;
+ }
+
+ .square {
+ width:300px;
+ height:300px;
+ background-color:red;
+ margin-top:10px;
+ }
+
+ </style>
+
+ </head>
+
+ <body>
+
+<p id = "para">  Inside a button element you can put content, 
+like text or images. This is the difference between 
+this element and buttons created with the input element.<p>
+
+
+
+
+<button type="button">Fade Out!</button>
+
+
+ <script>
+
+ $("button").click(function() {
+
+ 	$("#para").fadeOut();
+
+ });
+ 
+
+ 
+ 
+ </script>
+
+
+
+ </body>
+</html>
